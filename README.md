@@ -8,7 +8,7 @@ CookieMuncher helps you manage multiple sessions on the same website by overwrit
 
 ## Usage
 install all modules application:
- ```bash npm install ```
+ ```npm install ```
 
 build the tool by
 ```npm run build  ```

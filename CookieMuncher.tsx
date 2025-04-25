@@ -158,6 +158,13 @@ const CookieMuncher = () => {
 
             const currentCookies = await chrome.cookies.getAll({ url: url.href });
 
+            // **FIX: Store the retrieved cookies in the session's cookies array.**
+            setSessions(prevSessions =>
+                prevSessions.map(s =>
+                    s.id === sessionId ? { ...s, cookies: currentCookies } : s
+                )
+            );
+
             // Remove cookies that do not belong to the current session.
             const sessionCookieNames = session.cookies.map(c => c.name);
             for (const cookie of currentCookies) {

@@ -1,0 +1,2 @@
+Why did the developer go broke learning Git?
+Because he kept committing to everything... but never pushed through!

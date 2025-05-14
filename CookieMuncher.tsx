@@ -99,6 +99,10 @@ const CookieMuncher = () => {
     }, [sessions]);
 
     /**
+    * code change.
+    */
+
+    /**
     * Deletes a session and closes its associated tab.
     */
     const deleteSession = useCallback(async (id: string) => {

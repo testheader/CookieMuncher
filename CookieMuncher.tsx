@@ -97,11 +97,6 @@ const CookieMuncher = () => {
         setNewSessionName(''); // Clear input after creating
         setError(null);
     }, [sessions]);
-
-    /**
-    * code change.
-    */
-
     /**
     * Deletes a session and closes its associated tab.
     */
